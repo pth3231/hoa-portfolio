@@ -4,9 +4,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Purpose
 
-Personal portfolio website for **Phan Thai Hoa** — a full-stack developer currently based in Tokyo, Japan. The repository currently contains only design/reference assets; no framework, build tooling, or source code has been chosen yet. Once scaffolding exists, update this file with build/lint/test commands and architecture notes.
+Personal portfolio website for **Phan Thai Hoa** — a full-stack developer currently based in Tokyo, Japan.
 
-This is not a git repository.
+## Commands
+
+- `npm run dev` — dev server
+- `npm run build` — typecheck + production build (`dist/`)
+- `npm run preview` — serve the built site
+- `npm run test` — all tests (Vitest + React Testing Library, jsdom)
+- `npx vitest run src/demos/GmailSim.test.tsx` — run one test file
+- `npx vitest run -t "defaults to dark"` — run tests matching a name
+
+## Architecture
+
+Static React SPA (Vite + TypeScript + Tailwind v4), deployed to Cloudflare Pages.
+
+- All site copy lives in typed files in `src/content/` — edit copy there, never in components. `projects.ts` holds the blog-list `embedUrl` (empty string = fallback card) and the GmailSim script lines.
+- Theming: CSS custom properties (`--bg --surface --surface-deep --border --text --muted --accent --comment`) flipped by `data-theme` on `<html>`; inline pre-paint script in `index.html`; default dark; choice persisted in `localStorage`.
+- Motion is limited to scroll reveals (`Reveal` + `useInView`) and the GmailSim scripted terminal; both honor `prefers-reduced-motion`.
+- Zero runtime dependencies beyond react/react-dom. Fonts self-hosted via `@fontsource-variable/jetbrains-mono`.
 
 ## Source Assets (do not modify or delete)
 
