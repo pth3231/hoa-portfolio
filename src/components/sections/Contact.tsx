@@ -24,11 +24,6 @@ export function Contact() {
                 </a>
               </li>
               <li>
-                <a href={`tel:${links.phone.replace(/\s/g, "")}`} className="underline decoration-border underline-offset-4 hover:text-accent">
-                  {links.phone}
-                </a>
-              </li>
-              <li>
                 <a href={links.linkedin} target="_blank" rel="noreferrer" className="underline decoration-border underline-offset-4 hover:text-accent">
                   linkedin ↗
                 </a>

@@ -7,7 +7,7 @@ it("renders both projects with facts and repo links", () => {
   expect(screen.getByRole("heading", { name: "Projects" })).toBeInTheDocument();
   expect(screen.getAllByText("blog-list").length).toBeGreaterThan(0);
   expect(screen.getByText("gmail-notification")).toBeInTheDocument();
-  expect(screen.getByText(/p95 < 300 ms/)).toBeInTheDocument();
-  expect(screen.getByText(/~3,000 concurrent users/)).toBeInTheDocument();
+  expect(screen.getByText(/p95 under 300 ms/)).toBeInTheDocument();
+  expect(screen.getByText(/~3,000 simultaneous requests/)).toBeInTheDocument();
   expect(screen.getAllByRole("link", { name: /view repo/i })).toHaveLength(2);
 });

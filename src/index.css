@@ -4,6 +4,8 @@
 :root,
 [data-theme="dark"] {
   --bg: #0d1b2a;
+  --bg-light: #1e3450;
+  --bg-deep: #0a1520;
   --surface: #13273b;
   --surface-deep: #0a1622;
   --border: #2a4058;
@@ -15,6 +17,8 @@
 
 [data-theme="light"] {
   --bg: #f7f6f2;
+  --bg-light: #fbfaf6;
+  --bg-deep: #edeae1;
   --surface: #ffffff;
   --surface-deep: #fbfaf7;
   --border: #d8dee6;
@@ -26,6 +30,8 @@
 
 @theme inline {
   --color-bg: var(--bg);
+  --color-bg-light: var(--bg-light);
+  --color-bg-deep: var(--bg-deep);
   --color-surface: var(--surface);
   --color-surface-deep: var(--surface-deep);
   --color-border: var(--border);
@@ -41,7 +47,14 @@ html {
 }
 
 body {
-  background: var(--bg);
+  /* Diagonal sheen from the design mockup: lighter top-left → base → near-black bottom-right */
+  background: linear-gradient(
+    115deg,
+    var(--bg-light) 0%,
+    var(--bg) 55%,
+    var(--bg-deep) 100%
+  );
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-mono);
   font-size: 18px;

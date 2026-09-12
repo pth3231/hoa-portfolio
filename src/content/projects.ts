@@ -17,28 +17,28 @@ export const projects = [
   {
     id: "blog-list",
     name: "blog-list",
-    tagline: "Full-stack blog platform, deployed on bare metal",
+    tagline: "A full-stack blog platform, deployed on a bare-metal machine",
     repo: "https://github.com/pth3231/blog_list",
     // Set at deploy time (see spec §6.1). Empty string → BlogEmbed renders its fallback panel.
     embedUrl: "",
     facts: [
-      "CI/CD via GitHub Actions → bare-metal deploy",
-      "k6 + vitest + supertest: ~3,000 concurrent users, p95 < 300 ms",
-      "Registered domain served through Cloudflare Tunnel",
-      "Prometheus + Grafana monitoring",
+      "Simple CI/CD pipeline with GitHub Actions — automatic testing, then deploy to bare metal",
+      "Stress-tested with k6, vitest, supertest: ~3,000 simultaneous requests, p95 under 300 ms",
+      "Deployable with a registered domain through Cloudflare Tunnel",
+      "Learning monitoring systems with Prometheus and Grafana",
     ],
   },
   {
     id: "gmail-notification",
     name: "gmail-notification",
-    tagline: "LLM inbox summarizer with push notifications",
+    tagline: "Summarizing my inbox with a local LLM, every 3 hours",
     repo: "https://github.com/pth3231/gmail-notification",
     // No live embed — this project renders the scripted sim instead.
     embedUrl: "",
     facts: [
-      "Ollama LLM + Gmail API",
-      "GCP VM, cron every 3 hours",
-      "Fetch → summarize → push, unattended",
+      "Uses Ollama LLM and the Gmail API to process and summarize my inbox",
+      "Hosted on a small Google Cloud Platform VM",
+      "Cronjob every 3 hours: fetch → summarize → push notification",
     ],
   },
 ];

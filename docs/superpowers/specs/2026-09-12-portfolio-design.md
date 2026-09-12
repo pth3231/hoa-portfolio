@@ -42,6 +42,8 @@ A single-page, minimalistic personal portfolio for Phan Thai Hoa (full-stack dev
 | Token | Dark (default) | Light |
 |---|---|---|
 | `--bg` | `#0D1B2A` | `#F7F6F2` |
+| `--bg-light` (gradient start) | `#1E3450` | `#FBFAF6` |
+| `--bg-deep` (gradient end) | `#0A1520` | `#EDEAE1` |
 | `--surface` | `#13273B` | `#FFFFFF` |
 | `--surface-deep` (terminal interiors) | `#0A1622` | `#FBFAF7` |
 | `--border` | `#2A4058` | `#D8DEE6` |
@@ -50,7 +52,7 @@ A single-page, minimalistic personal portfolio for Phan Thai Hoa (full-stack dev
 | `--accent` (coral) | `#FF6B57` | `#C8402E` |
 | `--comment` (teal, prompts/comments) | `#5EB1A0` | `#3A7D6C` |
 
-Coral is the identity anchor; light mode deepens accent/comment for ≥ 4.5:1 text contrast. Components reference tokens only (via Tailwind utilities mapped to the variables) — they never know which mode is active.
+The page background is a subtle diagonal sheen (from the mockup): `linear-gradient(115deg, var(--bg-light) 0%, var(--bg) 55%, var(--bg-deep) 100%)` fixed to the viewport — lighter top-left, near-black bottom-right in dark mode; a faint warm-paper sheen in light mode. Coral is the identity anchor; light mode deepens accent/comment for ≥ 4.5:1 text contrast. Components reference tokens only (via Tailwind utilities mapped to the variables) — they never know which mode is active.
 
 ### 3.2 Theming mechanics
 
@@ -95,7 +97,7 @@ Single-page scroll. Fixed slim nav: `</>` mark, section links (short labels), th
 | /04 | Projects | **blog-list**: full-stack blog; GitHub Actions CI/CD to bare metal; k6/vitest/supertest ~3000 concurrent, p95 < 300ms; Cloudflare Tunnel; Prometheus + Grafana. Live iframe demo. **gmail-notification**: Ollama LLM + Gmail API summarizer; GCP VM; cron every 3h. Scripted sim demo. Both link to github.com/pth3231/* |
 | /05 | Skills | CV groupings verbatim: Languages (C/C++, Python, TS/JS, Go) · Frontend (HTML/CSS/JS, Tailwind, React, Zustand, React Router) · Backend (Node/Express, Morgan, FastAPI) · Databases (Redis, MongoDB, Postgres) · DevOps/Testing (Docker, Grafana, Prometheus, k6, Cloudflare, AWS, GCP) |
 | /06 | Future Plans | `todo.md` structure with sample items (see §6.3); user replaces content post-launch |
-| /07 | Contact | Email phanthaihoa070707@gmail.com · phone +81 90 7780 1063 · LinkedIn linkedin.com/in/hganyu · GitHub github.com/pth3231; `$ mail` prompt vignette |
+| /07 | Contact | Email phanthaihoa070707@gmail.com · LinkedIn linkedin.com/in/hganyu · GitHub github.com/pth3231; `$ mail` prompt vignette. (Phone omitted by request.) |
 
 **Honesty rule:** only real numbers from the CV appear, presented as project facts (p95 < 300ms, ~3000 concurrent, IELTS 8.0), never as vanity counters.
 

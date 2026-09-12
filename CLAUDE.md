@@ -20,7 +20,7 @@ Personal portfolio website for **Phan Thai Hoa** — a full-stack developer curr
 Static React SPA (Vite + TypeScript + Tailwind v4), deployed to Cloudflare Pages.
 
 - All site copy lives in typed files in `src/content/` — edit copy there, never in components. `projects.ts` holds the blog-list `embedUrl` (empty string = fallback card) and the GmailSim script lines.
-- Theming: CSS custom properties (`--bg --surface --surface-deep --border --text --muted --accent --comment`) flipped by `data-theme` on `<html>`; inline pre-paint script in `index.html`; default dark; choice persisted in `localStorage`.
+- Theming: CSS custom properties (`--bg --bg-light --bg-deep --surface --surface-deep --border --text --muted --accent --comment`) flipped by `data-theme` on `<html>`; diagonal gradient background (`--bg-light → --bg → --bg-deep`); inline pre-paint script in `index.html`; default dark; choice persisted in `localStorage`.
 - Motion is limited to scroll reveals (`Reveal` + `useInView`) and the GmailSim scripted terminal; both honor `prefers-reduced-motion`.
 - Zero runtime dependencies beyond react/react-dom. Fonts self-hosted via `@fontsource-variable/jetbrains-mono`.
 

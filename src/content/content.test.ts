@@ -42,10 +42,10 @@ it("gmail sim script is a non-empty typed sequence", () => {
   expect(gmailSimScript.lines.at(-1)?.tone).toBe("accent");
 });
 
-it("plans are real content with completion state", () => {
-  expect(plans.length).toBeGreaterThan(0);
+it("plans are two open roadmap items", () => {
+  expect(plans.length).toBe(2);
   expect(plans.every((p) => typeof p.done === "boolean")).toBe(true);
-  expect(plans.filter((p) => p.done).length).toBe(2);
+  expect(plans.every((p) => !p.done && !p.sample)).toBe(true);
 });
 
 it("links carry the real contact targets", () => {
