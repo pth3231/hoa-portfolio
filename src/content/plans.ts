@@ -1,8 +1,9 @@
-export type Plan = { text: string; sample: boolean };
+export type Plan = { text: string; sample: boolean; done: boolean };
 
-// Sample items — replace after launch (spec §6.3). `sample: true` renders a muted "(sample)" tag.
+// Real roadmap items — edit freely. `done: true` renders `[x]` with muted strikethrough;
+// `sample: true` would render a muted "(sample)" tag (kept for future placeholder items).
 export const plans: Plan[] = [
-  { text: "Finish B.A. in Information Sciences at ICU", sample: true },
-  { text: "Software engineering internship in Japan", sample: true },
-  { text: "Ship portfolio v2 with project case studies", sample: true },
+  { text: "Finish B.A. in Information Sciences at ICU", sample: false, done: true },
+  { text: "Software engineering internship in Japan", sample: false, done: true },
+  { text: "Ship portfolio v2 with project case studies", sample: false, done: false },
 ];

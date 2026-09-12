@@ -12,13 +12,13 @@ export function FuturePlans() {
           <Reveal>
             <Terminal title="todo.md">
               {plans.map((plan) => (
-                <div key={plan.text}>
-                  <span className="text-comment">- [ ]</span> {plan.text}{" "}
+                <div key={plan.text} className={plan.done ? "text-muted line-through" : ""}>
+                  <span className="text-comment">{plan.done ? "- [x]" : "- [ ]"}</span> {plan.text}{" "}
                   {plan.sample && <span className="text-muted">(sample)</span>}
                 </div>
               ))}
               <div className="mt-2 text-muted">
-                <span className="text-comment">#</span> edit src/content/plans.ts
+                <span className="text-comment">#</span> src/content/plans.ts
               </div>
             </Terminal>
           </Reveal>

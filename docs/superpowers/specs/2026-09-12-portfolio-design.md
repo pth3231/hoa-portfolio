@@ -127,13 +127,13 @@ Nav underline tracks the active section (subtle micro-motion, part of nav behavi
 
 ### 6.3 Future Plans structure
 
-`todo.md`-styled list inside a Terminal vignette. Ships with three sample items marked as samples in `content/plans.ts` via a `sample: true` flag the section renders as a muted "sample" tag, e.g.:
+`todo.md`-styled list inside a Terminal vignette. Items live in `content/plans.ts` as real roadmap content. Each item carries a `done: boolean` field — `done: true` renders a `- [x]` marker with a muted strikethrough on the line; `done: false` renders `- [ ]`. A `sample: true` flag (kept for future placeholder items) renders a muted "(sample)" tag. Current items:
 
-- [ ] Finish B.A. at ICU *(sample)*
-- [ ] Software engineering internship in Japan *(sample)*
-- [ ] Ship portfolio v2 *(sample)*
+- [x] Finish B.A. in Information Sciences at ICU
+- [x] Software engineering internship in Japan
+- [ ] Ship portfolio v2 with project case studies
 
-The user edits `plans.ts` after launch; markup never changes.
+The user edits `plans.ts` freely; markup never changes.
 
 ## 7. Architecture
 
