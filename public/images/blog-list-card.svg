@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#0D1B2A"/>
+  <rect x="40" y="40" width="560" height="320" rx="10" fill="#0A1622" stroke="#2A4058" stroke-width="2"/>
+  <rect x="40" y="40" width="560" height="36" rx="10" fill="#13273B"/>
+  <line x1="40" y1="76" x2="600" y2="76" stroke="#2A4058" stroke-width="2"/>
+  <circle cx="62" cy="58" r="5" fill="#5EB1A0"/>
+  <circle cx="80" cy="58" r="5" fill="#5EB1A0" opacity="0.5"/>
+  <circle cx="98" cy="58" r="5" fill="#2A4058"/>
+  <text x="320" y="63" text-anchor="middle" font-family="monospace" font-size="14" fill="#8A97A8">blog-list</text>
+  <rect x="90" y="120" width="300" height="14" rx="7" fill="#E8EDF4" opacity="0.85"/>
+  <rect x="90" y="156" width="420" height="10" rx="5" fill="#8A97A8" opacity="0.6"/>
+  <rect x="90" y="180" width="380" height="10" rx="5" fill="#8A97A8" opacity="0.45"/>
+  <rect x="90" y="204" width="440" height="10" rx="5" fill="#8A97A8" opacity="0.3"/>
+  <rect x="90" y="260" width="120" height="30" rx="8" fill="none" stroke="#FF6B57" stroke-width="2"/>
+  <text x="150" y="280" text-anchor="middle" font-family="monospace" font-size="14" fill="#FF6B57">read →</text>
+</svg>
