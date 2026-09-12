@@ -1,4 +1,4 @@
-import { gmailSimScript, projects } from "../../content/projects";
+import { projects } from "../../content/projects";
 import { BlogEmbed } from "../../demos/BlogEmbed";
 import { GmailSim } from "../../demos/GmailSim";
 import { Reveal } from "../ui/Reveal";
