@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phan Thai Hoa — Full-stack developer</title>
+    <meta name="description" content="Portfolio of Phan Thai Hoa — full-stack developer in Tokyo. Projects, skills, and contact." />
+    <meta property="og:title" content="Phan Thai Hoa — Full-stack developer" />
+    <meta property="og:description" content="Full-stack developer in Tokyo. Projects, skills, and contact." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (function () {
+        var t = "dark";
+        try {
+          if (localStorage.getItem("theme") === "light") t = "light";
+        } catch (e) {}
+        document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
