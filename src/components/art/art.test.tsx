@@ -1,12 +1,10 @@
 import { render } from "@testing-library/react";
 import { expect, it } from "vitest";
 import { EnvelopeArt } from "./EnvelopeArt";
-import { HeroArt } from "./HeroArt";
 import { StackArt } from "./StackArt";
 import { TimelineArt } from "./TimelineArt";
 
 it.each([
-  ["HeroArt", HeroArt],
   ["TimelineArt", TimelineArt],
   ["StackArt", StackArt],
   ["EnvelopeArt", EnvelopeArt],

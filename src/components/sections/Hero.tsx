@@ -1,6 +1,5 @@
 import { links } from "../../content/links";
 import { profile as me } from "../../content/profile";
-import { HeroArt } from "../art/HeroArt";
 import { Reveal } from "../ui/Reveal";
 
 export function Hero() {
@@ -39,7 +38,13 @@ export function Hero() {
           </Reveal>
         </div>
         <Reveal delayMs={300} className="hidden flex-1 md:block">
-          <HeroArt className="w-full max-w-sm mx-auto" />
+          <img
+            src="/images/hero-portrait.jpg"
+            alt={`Portrait of ${me.name}`}
+            width={800}
+            height={1000}
+            className="mx-auto aspect-[4/5] w-full max-w-sm rounded-xl border border-border object-cover"
+          />
         </Reveal>
       </div>
     </section>

@@ -77,7 +77,7 @@ Line-art: thin 1.5–2px strokes in `--border` tone, exactly one coral accent el
 
 | Section | Illustration |
 |---|---|
-| Hero | Line-art terminal/caret composition (static, revealed by scroll) |
+| Hero | Portrait photo (user-supplied, optimized to 800×1000 `hero-portrait.jpg`), rounded-xl bordered frame, revealed by scroll — replaced the original line-art terminal per user request |
 | About | Terminal vignette: `$ whoami`, `$ cat about.md` |
 | Timeline | Line-art: connected nodes; one path travels Hanoi → Tokyo |
 | Projects | Terminal vignettes — the demos themselves |
