@@ -47,7 +47,7 @@ A single-page, minimalistic personal portfolio for Phan Thai Hoa (full-stack dev
 | `--border` | `#2A4058` | `#D8DEE6` |
 | `--text` | `#E8EDF4` | `#16283C` |
 | `--muted` | `#8A97A8` | `#5C6B7E` |
-| `--accent` (coral) | `#FF6B57` | `#E04E3A` |
+| `--accent` (coral) | `#FF6B57` | `#C8402E` |
 | `--comment` (teal, prompts/comments) | `#5EB1A0` | `#3A7D6C` |
 
 Coral is the identity anchor; light mode deepens accent/comment for ≥ 4.5:1 text contrast. Components reference tokens only (via Tailwind utilities mapped to the variables) — they never know which mode is active.

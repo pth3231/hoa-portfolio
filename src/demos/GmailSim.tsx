@@ -25,7 +25,13 @@ export function GmailSim() {
   useEffect(() => {
     if (!startLines || reduced) return;
     const id = setInterval(() => {
-      setLineCount((n) => Math.min(n + 1, gmailSimScript.lines.length));
+      setLineCount((n) => {
+        if (n >= gmailSimScript.lines.length) {
+          clearInterval(id);
+          return n;
+        }
+        return n + 1;
+      });
     }, LINE_INTERVAL_MS);
     return () => clearInterval(id);
   }, [startLines, reduced]);
@@ -36,7 +42,7 @@ export function GmailSim() {
     <div ref={ref}>
       <Terminal title="cron — gmail-summarize">
         <div>
-          <span className="text-comment">cron</span> {out}
+          {out}
           {!done && <span className="animate-blink text-accent">▊</span>}
         </div>
         {gmailSimScript.lines.slice(0, visible).map((line) => (

@@ -46,7 +46,7 @@ it("shows the full final frame immediately under reduced motion", () => {
   stubIntersection(true);
   stubReduced(true);
   render(<GmailSim />);
-  expect(screen.getByText("cron run gmail-summarize")).toBeInTheDocument();
+  expect(screen.getByText((_, el) => el?.textContent === "cron run gmail-summarize")).toBeInTheDocument();
   expect(screen.getByText("✓ push notification sent")).toBeInTheDocument();
 });
 
