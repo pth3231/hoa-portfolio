@@ -39,7 +39,7 @@ export function Hero() {
         </div>
         <Reveal delayMs={300} className="hidden flex-1 md:block">
           <img
-            src="/images/hero-portrait.jpg"
+            src="/images/hero-portrait.png"
             alt={`Portrait of ${me.name}`}
             width={800}
             height={1000}
