@@ -22,7 +22,7 @@ export default function App() {
       </main>
       <footer className="border-t border-border">
         <p className="mx-auto max-w-5xl px-6 py-6 text-[15px] text-muted">
-          © 2026 Phan Thai Hoa — built with Vite + React
+          © 2026 Phan Thai Hoa
         </p>
       </footer>
     </>

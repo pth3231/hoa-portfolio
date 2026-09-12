@@ -70,10 +70,6 @@ export function Projects() {
             <GmailSim />
           </Reveal>
         </div>
-
-        <p className="mt-16 text-[15px] text-muted">
-          # sim script: {gmailSimScript.lines.length} lines — edit in src/content/projects.ts
-        </p>
       </div>
     </section>
   );
